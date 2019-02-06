@@ -1,0 +1,10 @@
+
+/* hero-container */
+.hero-container {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.hero-container-header {
+	flex:1 0 100%;
+}

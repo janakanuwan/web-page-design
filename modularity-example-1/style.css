@@ -1,0 +1,38 @@
+
+/* common */
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+
+/* hero-container */
+.hero-container {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.hero-container-header {
+	flex:1 0 100%;
+}
+
+
+/* hero-item */
+.hero-item {
+	width: 170px;
+	margin: 10px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.hero-item > img {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+
