@@ -1,3 +1,3 @@
 
-const app = new App(heroData.getData());
-app.renderHeros(['Marvel Comics', 'DC Comics']);
+const app = new App(heroData.getData(), ['Marvel Comics', 'DC Comics']);
+app.renderHeros();

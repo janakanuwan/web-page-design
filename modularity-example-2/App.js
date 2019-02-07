@@ -26,19 +26,19 @@ const getFilteredHeroes = (publisher, heroDataArray) => {
 
 // class: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
 class App {
-	constructor(dataArray){
+	constructor(dataArray, publisherArray){
 		// set the data
 		this.heroes = parseHeroData(dataArray);	
+		this.publishers = publisherArray;
+		console.log(publisherArray);
 	}
 
-	renderHeros(publisherArray) {
-		console.log(publisherArray);
-
+	renderHeros() {
 		const albumContainer = document.querySelector('#album-container');
 		// clear the exiting items
     	albumContainer.innerHTML = '';
 
-		publisherArray.forEach(publisher => {
+		this.publishers.forEach(publisher => {
 			// find hero by publisher
 			const filteredHeros = getFilteredHeroes(publisher, this.heroes);
 
