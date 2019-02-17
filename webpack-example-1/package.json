@@ -1,0 +1,20 @@
+{
+  "name": "webpack-example-1",
+  "version": "1.0.0",
+  "description": "webpack 4 example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "build-dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --hot --inline",
+    "start-open": "webpack-dev-server --mode development --open"
+  },
+  "author": "Nuwan Janaka",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
