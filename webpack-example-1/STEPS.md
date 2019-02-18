@@ -4,13 +4,13 @@
 ## steps
 
 1. Create directory to keep project
-```bash
+```sh
 mkdir webpack-example-1  
 cd webpack-example-1
 ```
 
 2. Initialize npm to configure project (type the required fields)
-```bash
+```sh
 npm init
 ```
 
@@ -28,25 +28,24 @@ npm init
 
 4. Install webpack 4 locally (as a development dependency)
 	- More details [webpack getting-started](https://webpack.js.org/guides/getting-started/)
-```bash
+```sh
 npm install --save-dev webpack
 npm install --save-dev webpack-cli
 ```
-<br/>
 	- Add `{"private": true}` to `package.json` prevent an accidental publish of your code
 
 5. Configure webpack to build the project/module
 	- Add `"scripts": {"build": "webpack"}` to `package.json`
 
 6. Run the npm script "build" to build the project/module
-```bash
+```sh
 npm run build
 ```
 
 	- Notice the failure due to missing `src` directory (why? webpack 4 is looking for an entry point in `./src` as a default )
 
 7. Create the directory structure (`src`, `test`, `assets` inside the project directory)
-```bash
+```sh
 mkdir src  		# to keep source codes
 mkdir test 		# to keep test codes
 mkdir assets	# to keep assets (images, style sheets, static files)
@@ -78,7 +77,7 @@ console.log("Welcome to webbpack 4");
 ```
 
 8. Build the project again
-```bash
+```sh
 npm run build
 ```
 
@@ -115,7 +114,7 @@ tutorialInfo();
 12. Open the `dist/index.html` in browser directly (what are the issues?)
 
 13. Install `webpack-dev-server`
-```bash
+```sh
 npm install --save-dev webpack-dev-server
 ```
 	- Append 'webpack-dev-server' to '`package.json` as follows:
@@ -124,7 +123,7 @@ npm install --save-dev webpack-dev-server
 ```
 
 	- Start the dev-server
-```bash
+```sh
 npm run start
 # npm start
 ```
