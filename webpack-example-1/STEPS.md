@@ -127,8 +127,8 @@ npm install --save-dev webpack-dev-server
 npm run start
 # npm start
 ```
- - Open the link (http://localhost:8080/)[http://localhost:8080/] in browser (Is there any output? What's wrong?)
-   - Go to (http://localhost:8080/dist([http://localhost:8080/dist]
+ - Open the link [http://localhost:8080/](http://localhost:8080/) in browser (Is there any output? What's wrong?)
+   - Go to [http://localhost:8080/dist](http://localhost:8080/dist)
  - Do a change in `index.js`. What will happen?
 
 14. Let's change served directory using webpack configurations
@@ -156,7 +156,7 @@ devServer: {
 ```
 > - Q1: How to change the hosting port?
 
-15. Enable (hot module replacement)[https://webpack.js.org/concepts/hot-module-replacement/]
+15. Enable [hot module replacement](https://webpack.js.org/concepts/hot-module-replacement/)
 	- Change `{"start": "webpack-dev-server --mode development"}` to `{"start": "webpack-dev-server --mode development --hot --inline"}` in `pacakge.json`
 
 	- Do a change in `index.js` and observe the browser. What will happen?
