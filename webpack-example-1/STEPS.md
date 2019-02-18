@@ -33,7 +33,7 @@ npm install --save-dev webpack
 npm install --save-dev webpack-cli
 ```
 
-   -Add `{"private": true}` to `package.json` prevent an accidental publish of your code
+   - Add `{"private": true}` to `package.json` prevent an accidental publish of your code
 
 5. Configure webpack to build the project/module
 	- Add `"scripts": {"build": "webpack"}` to `package.json`
@@ -118,18 +118,18 @@ tutorialInfo();
 ```sh
 npm install --save-dev webpack-dev-server
 ```
-    - Append 'webpack-dev-server' to `package.json` as follows:
+ - Append 'webpack-dev-server' to `package.json` as follows:
 ```json
 "scripts": {"start": "webpack-dev-server --mode development"}
 ```
-    - Start the dev-server
+ - Start the dev-server
 ```sh
 npm run start
 # npm start
 ```
-     - Open the link (http://localhost:8080/)[http://localhost:8080/] in browser (Is there any output? What's wrong?)
-       - Go to (http://localhost:8080/dist([http://localhost:8080/dist]
-     - Do a change in `index.js`. What will happen?
+ - Open the link (http://localhost:8080/)[http://localhost:8080/] in browser (Is there any output? What's wrong?)
+   - Go to (http://localhost:8080/dist([http://localhost:8080/dist]
+ - Do a change in `index.js`. What will happen?
 
 14. Let's change served directory using webpack configurations
 	- Create `webpack.config.js` in the same directory as `package.json`
@@ -147,14 +147,13 @@ module.exports = {
 > - What are 'entry' and 'output' ?
 > - Why there is no need to specify the config file? If `webpack.config.js` is present, the webpack command picks it up by default
 
-   - Append the following to 'module.exports' in `webpack.config.js` to change the serving director for 'webpack-dev-server'
+ - Append the following to 'module.exports' in `webpack.config.js` to change the serving director for 'webpack-dev-server'
 
 ```
 devServer: {
 	contentBase: path.join(__dirname, 'dist')
 }
 ```
-
 > - Q1: How to change the hosting port?
 
 15. Enable (hot module replacement)[https://webpack.js.org/concepts/hot-module-replacement/]
