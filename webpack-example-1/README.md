@@ -6,4 +6,3 @@ To install dependency modules locally, run:
 npm install
 ```
 
-
