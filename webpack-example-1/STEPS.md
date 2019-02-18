@@ -85,7 +85,7 @@ npm run build
 > - NOTE: webpack will generate `dist/main.js` as the output, open it in a text editor and see how it looks
 > - See: WARNING in configuration. The 'mode' option has not been set
    - Set the development mode
-   - Change `"scripts": {"build": "webpack"}` to `"scripts": {"build": "webpack --mode development"}`
+     - Change `"scripts": {"build": "webpack"}` to `"scripts": {"build": "webpack --mode development"}`
 
 9. Run npm script "build" and see the `dist/main.js` in text editor (What are the observations?)
 
@@ -118,7 +118,7 @@ tutorialInfo();
 ```sh
 npm install --save-dev webpack-dev-server
 ```
-    - Append 'webpack-dev-server' to '`package.json` as follows:
+    - Append 'webpack-dev-server' to `package.json` as follows:
 ```json
 "scripts": {"start": "webpack-dev-server --mode development"}
 ```
@@ -127,11 +127,9 @@ npm install --save-dev webpack-dev-server
 npm run start
 # npm start
 ```
-
-
-    - Open the link (http://localhost:8080/)[http://localhost:8080/] in browser (Is there any output? What's wrong?)
-		- Go to (http://localhost:8080/dist([http://localhost:8080/dist]
-    - Do a change in `index.js`. What will happen?
+     - Open the link (http://localhost:8080/)[http://localhost:8080/] in browser (Is there any output? What's wrong?)
+       - Go to (http://localhost:8080/dist([http://localhost:8080/dist]
+     - Do a change in `index.js`. What will happen?
 
 14. Let's change served directory using webpack configurations
 	- Create `webpack.config.js` in the same directory as `package.json`
@@ -148,7 +146,8 @@ module.exports = {
 
 > - What are 'entry' and 'output' ?
 > - Why there is no need to specify the config file? If `webpack.config.js` is present, the webpack command picks it up by default
-	- Append the following to 'module.exports' in `webpack.config.js` to change the serving director for 'webpack-dev-server'
+
+   - Append the following to 'module.exports' in `webpack.config.js` to change the serving director for 'webpack-dev-server'
 
 ```
 devServer: {
