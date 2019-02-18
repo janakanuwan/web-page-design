@@ -81,10 +81,10 @@ console.log("Welcome to webbpack 4");
 npm run build
 ```
 
-	- NOTE: webpack will generate `dist/main.js` as the output, open it in a text editor and see how it looks
-	- See: WARNING in configuration. The 'mode' option has not been set
-	- Let's set the development mode
-		- Change `"scripts": {"build": "webpack"}` to `"scripts": {"build": "webpack --mode development"}`
+> - NOTE: webpack will generate `dist/main.js` as the output, open it in a text editor and see how it looks
+> - See: WARNING in configuration. The 'mode' option has not been set
+> - Let's set the development mode
+>> - Change `"scripts": {"build": "webpack"}` to `"scripts": {"build": "webpack --mode development"}`
 
 9. Run npm script "build" and see the `dist/main.js` in text editor (What are the observations?)
 
