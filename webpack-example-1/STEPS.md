@@ -32,6 +32,7 @@ npm init
 npm install --save-dev webpack
 npm install --save-dev webpack-cli
 ```
+<br/>
 	- Add `{"private": true}` to `package.json` prevent an accidental publish of your code
 
 5. Configure webpack to build the project/module
