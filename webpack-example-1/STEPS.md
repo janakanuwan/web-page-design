@@ -32,7 +32,8 @@ npm init
 npm install --save-dev webpack
 npm install --save-dev webpack-cli
 ```
-> - Add `{"private": true}` to `package.json` prevent an accidental publish of your code
+
+   -Add `{"private": true}` to `package.json` prevent an accidental publish of your code
 
 5. Configure webpack to build the project/module
 	- Add `"scripts": {"build": "webpack"}` to `package.json`
@@ -83,8 +84,8 @@ npm run build
 
 > - NOTE: webpack will generate `dist/main.js` as the output, open it in a text editor and see how it looks
 > - See: WARNING in configuration. The 'mode' option has not been set
-> - Let's set the development mode
-	- Change `"scripts": {"build": "webpack"}` to `"scripts": {"build": "webpack --mode development"}`
+   - Set the development mode
+   - Change `"scripts": {"build": "webpack"}` to `"scripts": {"build": "webpack --mode development"}`
 
 9. Run npm script "build" and see the `dist/main.js` in text editor (What are the observations?)
 
@@ -117,24 +118,20 @@ tutorialInfo();
 ```sh
 npm install --save-dev webpack-dev-server
 ```
-
-
-	- Append 'webpack-dev-server' to '`package.json` as follows:
+    - Append 'webpack-dev-server' to '`package.json` as follows:
 ```json
 "scripts": {"start": "webpack-dev-server --mode development"}
 ```
-
-
-	- Start the dev-server
+    - Start the dev-server
 ```sh
 npm run start
 # npm start
 ```
 
 
-	- Open the link (http://localhost:8080/)[http://localhost:8080/] in browser (Is there any output? What's wrong?)
+    - Open the link (http://localhost:8080/)[http://localhost:8080/] in browser (Is there any output? What's wrong?)
 		- Go to (http://localhost:8080/dist([http://localhost:8080/dist]
-	- Do a change in `index.js`. What will happen?
+    - Do a change in `index.js`. What will happen?
 
 14. Let's change served directory using webpack configurations
 	- Create `webpack.config.js` in the same directory as `package.json`
