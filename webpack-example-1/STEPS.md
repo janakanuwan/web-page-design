@@ -27,23 +27,23 @@ npm init
 ```
 
 4. Install webpack 4 locally (as a development dependency)
-	- More details [webpack getting-started](https://webpack.js.org/guides/getting-started/)
+ - More details [webpack getting-started](https://webpack.js.org/guides/getting-started/)
 ```bash
 npm install --save-dev webpack
 npm install --save-dev webpack-cli
 ```
 
-	- Add `{"private": true}` to `package.json` prevent an accidental publish of your code
+ - Add `{"private": true}` to `package.json` prevent an accidental publish of your code
 
 5. Configure webpack to build the project/module
-	- Add `"scripts": {"build": "webpack"}` to `package.json`
+ - Add `"scripts": {"build": "webpack"}` to `package.json`
 
 6. Run the npm script "build" to build the project/module
 ```bash
 npm run build
 ```
 
-	- Notice the failure due to missing `src` directory (why? webpack 4 is looking for an entry point in `./src` as a default )
+ - Notice the failure due to missing `src` directory (why? webpack 4 is looking for an entry point in `./src` as a default )
 
 7. Create the directory structure (`src`, `test`, `assets` inside the project directory)
 ```bash
@@ -52,7 +52,7 @@ mkdir test 		# to keep test codes
 mkdir assets	# to keep assets (images, style sheets, static files)
 ```
 
-	- Create and add `index.html` to `src`
+ - Create and add `index.html` to `src`
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -70,7 +70,7 @@ mkdir assets	# to keep assets (images, style sheets, static files)
 </html>
 ```
 
-	- Create and add `index.js` to `src`
+ - Create and add `index.js` to `src`
 ```javascript
 console.log("Welcome to webbpack 4");
 ```
@@ -80,10 +80,10 @@ console.log("Welcome to webbpack 4");
 npm run build
 ```
 
-	- NOTE: webpack will generate `dist/main.js` as the output, open it in a text editor and see how it looks
-	- See: WARNING in configuration. The 'mode' option has not been set
-	- Let's set the development mode
-		- change `"scripts": {"build": "webpack"}` to `"scripts": {"build": "webpack --mode development"}`
+   - NOTE: webpack will generate `dist/main.js` as the output, open it in a text editor and see how it looks
+   - See: WARNING in configuration. The 'mode' option has not been set
+   - Let's set the development mode
+     - change `"scripts": {"build": "webpack"}` to `"scripts": {"build": "webpack --mode development"}`
 
 9. Run npm script "build" and see the `dist/main.js` in text editor (What are the observations?)
 
@@ -117,23 +117,22 @@ tutorialInfo();
 npm install --save-dev webpack-dev-server
 ```
 
-	- Append 'webpack-dev-server' to '`package.json` as follows:
+     - Append 'webpack-dev-server' to '`package.json` as follows:
 ```json
 "scripts": {"start": "webpack-dev-server --mode development"}
 ```
 
-	- Start the dev-server
+     - Start the dev-server
 ```bash
 npm run start
 # npm start
 ```
-	- Open the link (http://localhost:8080/)[http://localhost:8080/] in browser (Is there any output? What's wrong?)
-		- Go to (http://localhost:8080/dist([http://localhost:8080/dist]
-
-	- Do a change in `index.js`. What will happen?
+     - Open the link (http://localhost:8080/)[http://localhost:8080/] in browser (Is there any output? What's wrong?)
+	   - Go to (http://localhost:8080/dist([http://localhost:8080/dist]
+     - Do a change in `index.js`. What will happen?
 
 14. Let's change served directory using webpack configurations
-	- Create `webpack.config.js` in the same directory as `package.json`
+    - Create `webpack.config.js` in the same directory as `package.json`
 
 ```javascript
 const path = require('path');
@@ -145,20 +144,19 @@ module.exports = {
   }
 };
 ```
-	- What are 'entry' and 'output' ?
-	- Why there is no need to specify the config file? If `webpack.config.js` is present, the webpack command picks it up by default
-
-	- Append the following to 'module.exports' in `webpack.config.js` to change the serving director for 'webpack-dev-server'
+    - What are 'entry' and 'output' ?
+    - Why there is no need to specify the config file? If `webpack.config.js` is present, the webpack command picks it up by default
+    - Append the following to 'module.exports' in `webpack.config.js` to change the serving director for 'webpack-dev-server'
 ```json
 devServer: {
 	contentBase: path.join(__dirname, 'dist')
 }
 ```
-	- Q1: How to change the hosting port?
+    - Q1: How to change the hosting port?
 
 15. Enable (hot module replacement)[https://webpack.js.org/concepts/hot-module-replacement/]
-	- Change `{"start": "webpack-dev-server --mode development"}` to `{"start": "webpack-dev-server --mode development --hot --inline"}` in `pacakge.json`
+    - Change `{"start": "webpack-dev-server --mode development"}` to `{"start": "webpack-dev-server --mode development --hot --inline"}` in `pacakge.json`
 
-	- Do a change in `index.js` and observe the browser. What will happen?
+    - Do a change in `index.js` and observe the browser. What will happen?
 
 
