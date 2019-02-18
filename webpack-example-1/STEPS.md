@@ -116,8 +116,7 @@ tutorialInfo();
 ```bash
 npm install --save-dev webpack-dev-server
 ```
-
-     - Append 'webpack-dev-server' to '`package.json` as follows:
+    - Append 'webpack-dev-server' to '`package.json` as follows:
 ```json
 "scripts": {"start": "webpack-dev-server --mode development"}
 ```
@@ -147,7 +146,7 @@ module.exports = {
     - What are 'entry' and 'output' ?
     - Why there is no need to specify the config file? If `webpack.config.js` is present, the webpack command picks it up by default
     - Append the following to 'module.exports' in `webpack.config.js` to change the serving director for 'webpack-dev-server'
-```json
+```
 devServer: {
 	contentBase: path.join(__dirname, 'dist')
 }
