@@ -144,7 +144,7 @@ module.exports = {
 };
 ```
 
-> - What are 'entry' and 'output' ?
+> - What are '[entry](https://webpack.js.org/concepts/#entry)' and '[output](https://webpack.js.org/concepts/#output)' ?
 > - Why there is no need to specify the config file? If `webpack.config.js` is present, the webpack command picks it up by default
 
  - Append the following to 'module.exports' in `webpack.config.js` to change the serving director for 'webpack-dev-server'
