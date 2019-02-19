@@ -19,16 +19,42 @@ npm install style-loader css-loader --save-dev
 module.exports = {
   
   module: {
-      rules: [
-        {
-          test: /\.scss$/,
-          use: [
-              "style-loader", // creates style nodes from JS strings
-              "css-loader",   // translates CSS into CommonJS
-              "sass-loader"   // compiles Sass to CSS, using Node Sass by default
-          ]
-        }
-      ]
+    rules: [
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader', // creates style nodes from JS strings
+          'css-loader',   // translates CSS into CommonJS
+          'sass-loader'   // compiles Sass to CSS, using Node Sass by default
+        ]
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      }
+    ]
   }
 };
+```
+
+>- Q3) How to use 'url-loader' to load images?
+
+4. Let's add the following SASS files to `assets/styles/` directory
+```scss
+// theme.scss
+$themeColor-Light: #f3e2c7;
+$themeColor-Dark:#b68d4c;
+```
+```scss
+// appStyle.scss
+@import 'themeColors';
+$theme-font:    verdana, sans-serif;
+
+body {
+  font: $theme-font;
+  background-color: $themeColor-Light;
+  h1, h2 {
+      color: $themeColor-Dark
+  }
+}
 ```

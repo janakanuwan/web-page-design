@@ -3,7 +3,7 @@ const tutorialInfo = function () {
 	console.log('TutorialInfo');
 
 	const title = document.createElement('h2');
-	title.textContent = 'Tutoial 3';
+	title.textContent = 'Tutoial 3 - Example 1';
 	
 	const description = document.createElement('p');
 	description.textContent = 'This tutorial try to explain the basic concepts of JS build tools';
