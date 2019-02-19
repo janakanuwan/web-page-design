@@ -3,5 +3,9 @@
 
 ## steps
 
-1. Install `sass-loader` and `node-sass` (as development depedency)
+1. Install `babel-loader` along with its dependencies (`@babel/core` and `@babel/preset-env`)
+```
+npm install -D babel-loader @babel/core @babel/preset-env
+```
 
+2. 
