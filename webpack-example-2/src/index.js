@@ -1,4 +1,6 @@
 
+import './../assets/styles/appStyle.scss'
+
 const tutorialInfo = function () {
 	console.log('TutorialInfo');
 

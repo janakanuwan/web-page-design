@@ -11,9 +11,9 @@ npm install sass-loader node-sass webpack --save-dev
 ```bash
 npm install style-loader css-loader --save-dev
 ```
-> - Check the `paclage.json`
+> - Check the `package.json`
 
-3. Add all stylesheet loaders to `webpack.config.js` to processs/transform stylesheets during the building process
+3. Add all style-sheet loaders to `webpack.config.js` to process/transform style-sheets during the building process
 ```javascript
 // webpack.config.js
 module.exports = {
@@ -37,11 +37,17 @@ module.exports = {
 };
 ```
 
->- Q3) How to use 'url-loader' to load images?
+>- Q3) How can be combine above "scss" and "css" files to one rule?
+>- Q3) How to use '[url-loader](https://github.com/webpack-contrib/url-loader)' to load images?
+
+5. Start the `webpack-dev-derver`
+```bash
+npm start
+```
 
 4. Let's add the following SASS files to `assets/styles/` directory
 ```scss
-// theme.scss
+// themeColors.scss
 $themeColor-Light: #f3e2c7;
 $themeColor-Dark:#b68d4c;
 ```
@@ -58,3 +64,14 @@ body {
   }
 }
 ```
+
+5. Import the SASS within `index.js` 
+```javascript
+// index.js
+
+import './../assets/styles/appStyle.scss'
+
+```
+
+ - What can you see on the browser?
+
