@@ -89,7 +89,7 @@ npm run build
 
 9. Run npm script "build" and see the `dist/main.js` in text editor (What are the observations?)
 
-10. Let's copy the `index.html` to `dist` directory and add '`main.js` to load (add following to <body>)
+10. Let's copy the `index.html` to `dist` directory and add `main.js` to load (add following to <body>)
 ```html
 <script src="main.js"></script>
 ```
@@ -156,6 +156,7 @@ devServer: {
 }
 ```
 > - Q1: How to change the hosting port?
+> - Q2: How to avoid the publication of `path.join(__dirname, 'dist')` both in 'deveServer' and 'output' ?
 
 15. Enable [hot module replacement](https://webpack.js.org/concepts/hot-module-replacement/)
 	- Change `{"start": "webpack-dev-server --mode development"}` to `{"start": "webpack-dev-server --mode development --hot --inline"}` in `pacakge.json`
