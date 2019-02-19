@@ -37,7 +37,7 @@ module.exports = {
 };
 ```
 
->- Q3) How can you combine above "scss" and "css" files to one rule?
+>- Q3) How can you combine above "scss" and "css" rules to a single rule?
 >- Q3) How to use '[url-loader](https://github.com/webpack-contrib/url-loader)' to load images?
 
 5. Start the `webpack-dev-derver`
