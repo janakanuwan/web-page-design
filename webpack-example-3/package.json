@@ -1,0 +1,23 @@
+{
+  "name": "webpack-example-3",
+  "version": "1.0.0",
+  "description": "webpack 4 example",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build-dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --hot --inline",
+    "start-open": "webpack-dev-server --mode development --open"
+  },
+  "author": "Nuwan Janaka",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
