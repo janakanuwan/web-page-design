@@ -144,6 +144,7 @@ module.exports = {
 };
 ```
 
+> - What is meant by "require('path')" ? It imports 'path' module via Node.js in [CommonJS format](https://nodejs.org/docs/latest/api/modules.html)
 > - What are '[entry](https://webpack.js.org/concepts/#entry)' and '[output](https://webpack.js.org/concepts/#output)' ?
 > - Why there is no need to specify the config file? If `webpack.config.js` is present, the webpack command picks it up by default
 
