@@ -34,6 +34,7 @@ module.exports = {
       }
     ]
   }
+  // NOTE: you may need to add leading or trailing comma (,) to separate 'module' from the rest
 };
 ```
 

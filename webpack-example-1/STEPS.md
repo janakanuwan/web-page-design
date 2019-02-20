@@ -158,10 +158,17 @@ module.exports = {
 
  - Append the following to 'module.exports' in `webpack.config.js` to change the serving director for 'webpack-dev-server'
 
-```
-devServer: {
-	contentBase: path.join(__dirname, 'dist')
-}
+```javascript
+module.exports = {
+  
+  devServer: {
+    contentBase: path.join(__dirname, 'dist')
+  }
+  // NOTE: you may need to add leading or trailing comma (,) to separate 'devServer' from the rest
+};
+
+
+// // 
 ```
 > - Q1: How to change the hosting port?
 > - Q2: How to avoid the publication of `path.join(__dirname, 'dist')` both in 'deveServer' and 'output' ?

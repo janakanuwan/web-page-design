@@ -1,26 +1,17 @@
-import './../assets/styles/appStyle.scss';
+import './../assets/styles/appStyle.scss'
 
-const tutorialInfo = (data) => {				// Arrow functions 
-	const {name, description:des} = data; 		// Destructuring
-	console.log(`Starting ${data.name}`); 		//Template Literals
+const tutorialInfo = function () {
+	console.log('TutorialInfo');
 
 	const title = document.createElement('h2');
-	title.textContent = name;
+	title.textContent = 'Tutoial 3 - Example 3';
 	
 	const description = document.createElement('p');
-	description.textContent = des;
+	description.textContent = 'This tutorial try to explain the basic concepts of webpack plugins';
 
 	const container = document.querySelector('#container');
 	container.appendChild(title);
 	container.appendChild(description);
 };
 
-tutorialInfo({ name: 'Tutoial 3 - Example 3', description: 'This tutorial try to explain the Babel' });
-
-const printFirst = (list) => {
-	const [a, ...rest] = lists
-	console.log(a);
-	console.log(rest);
-};
-
-printFirst([1, 3, 5])
+tutorialInfo();
