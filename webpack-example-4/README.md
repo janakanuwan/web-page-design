@@ -1,4 +1,4 @@
-# webpack-example-4
+# webpack-example-3
 
 
 To install dependency modules locally, run:

@@ -20,27 +20,15 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: ['style-loader', 'css-loader'],
-			},
-			{
-				test: /\.js$/,
-				exclude: /(node_modules)/,
-				use: {
-					loader: 'babel-loader',
-					options: {
-					  presets: ['@babel/preset-env']
-					}
-				}
 			}
 		]
 	},
 	plugins: [
-		new HtmlWebpackPlugin({         // 
-			title: 'My webpack example with HTML webpack plugin',
-			template: './assets/index.html',
+		new HtmlWebpackPlugin({         
+			template: './assets/index.html',  // instead of creating a new file, use the template
 		})
 	],
 	devServer: {
 		contentBase: path.join(__dirname, 'dist')
-	},
-	devtool: 'cheap-module-source-map'
+	}
 };
