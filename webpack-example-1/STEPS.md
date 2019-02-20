@@ -13,6 +13,7 @@ cd webpack-example-1
 ```sh
 npm init
 ```
+>- NOTE: This will create a `package.json` file inside the directory
 
 3. Create a .gitignore file and add the following content(to remove local dependencies e.g. "/node_modules")
 ```
@@ -32,8 +33,10 @@ npm init
 npm install --save-dev webpack
 npm install --save-dev webpack-cli
 ```
+> - What has changed in `package.json` ?
+> - What is meant by '--save-dev' command argument?
 
-   - Add `{"private": true}` to `package.json` prevent an accidental publish of your code
+  - Add `{"private": true}` to `package.json` prevent an accidental publish of your code
 
 5. Configure webpack to build the project/module
 	- Add `"scripts": {"build": "webpack"}` to `package.json`
@@ -93,7 +96,7 @@ npm run build
 ```html
 <script src="main.js"></script>
 ```
-11. add a simple code to `index.js`
+11. Let's add a simple code to `index.js`
 ```javascript
 const tutorialInfo = function () {
 	console.log('TutorialInfo');
@@ -112,7 +115,11 @@ const tutorialInfo = function () {
 tutorialInfo();
 ```	
 
-12. Open the `dist/index.html` in browser directly (what are the issues?)
+12. Open the `dist/index.html` in browser directly 
+> - What is the protocol used by browser to display the file?
+> - Are the images, style-sheets and JavaScripts loaded by browser?
+> - Can you perform server communication (e.g. AJAX)?
+> - If you do a change in html/css/js file and save it, will it be reflected in browser?
 
 13. Install `webpack-dev-server`
 ```sh

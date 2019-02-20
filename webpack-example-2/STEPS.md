@@ -37,8 +37,9 @@ module.exports = {
 };
 ```
 
+>- What are meant by 'test' and 'use'?
 >- Q3) How can you combine above "scss" and "css" rules to a single rule?
->- Q3) How to use '[url-loader](https://github.com/webpack-contrib/url-loader)' to load images?
+>- Q4) How to use '[url-loader](https://github.com/webpack-contrib/url-loader)' to load images?
 
 5. Start the `webpack-dev-server`
 ```bash
