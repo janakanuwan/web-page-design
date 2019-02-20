@@ -9,20 +9,23 @@ npm install -D babel-loader @babel/core @babel/preset-env
 ```
 
 2. Add the `babel-loader` to `webpack.config.js` to transform JS code to backward compatible JS code
-```
-module: {
-  rules: [
-    {
-      test: /\.m?js$/,
-      exclude: /node_modules/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env']
+```javascript
+module.exports = {
+
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
         }
       }
-    }
-  ]
+    ]
+  }
 }
 ```
 >- What is meant by 'exclude'? Can we omit it?
@@ -74,7 +77,7 @@ printFirst([1, 3, 5])
 6. Improving the debugging by mapping transformed code (which browser executes) to actual source code.
   - Using a [source map](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)
   - Let's enable [source map](https://webpack.js.org/configuration/devtool/) in webpack
-```
+```javascript
 module.exports = {
   devtool: 'cheap-module-source-map'
 }
@@ -107,5 +110,5 @@ module.exports = {
 
 > - What are the [configuration options](https://github.com/jantimon/html-webpack-plugin#options) for HTML webpack plugin?
   - Delete the `dist/index.html` file and run `npm run build-dev`
-    >- What are the changes in `dist/index.html` compared to 'assets/index.html'
+    >- What are the changes in `dist/index.html` compared to `assets/index.html`
 
