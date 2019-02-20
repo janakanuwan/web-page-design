@@ -8,15 +8,13 @@
 npm i -D jest
 ```
 
-2. Enable to run Jest via npm scripts
+2. Enable to run Jest via npm scripts in `package.json`
 ```json
 {
 
   "scripts": {
-    
     "test": "jest"
   }
-
 }
 ```
 
@@ -44,7 +42,7 @@ function getFilteredHeroes (publisher, heroDataArray) {
 
 module.exports = getFilteredHeroes;
 ```
->- How can we test above function?
+>- How can we test the above function?
 >- What is meant by 'module.exports = getFilteredHeroes;' ?  Hint: [nodejs-module-exports](https://www.tutorialsteacher.com/nodejs/nodejs-module-exports)
 
 5. Add test file (say `src/util.test.js`) to test the above function in `src/util.js`
