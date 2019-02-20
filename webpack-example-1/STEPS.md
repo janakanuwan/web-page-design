@@ -137,6 +137,7 @@ npm run start
  - Open the link [http://localhost:8080/](http://localhost:8080/) in browser (Is there any output? What's wrong?)
    - Go to [http://localhost:8080/dist](http://localhost:8080/dist)
  - Do a change in `index.js`. What will happen?
+ - Delete the `dist` folder and start the dev-server again. Will a new `dist` folder be created?
 
 14. Let's change served directory using webpack configurations
 	- Create `webpack.config.js` in the same directory as `package.json`

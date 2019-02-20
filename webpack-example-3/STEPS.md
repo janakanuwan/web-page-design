@@ -90,7 +90,7 @@ module.exports = {
 npm i -D html-webpack-plugin
 ```
 
-  - Configure HTML-webpack-plugin in `webpack.config.js`
+  - Configure HTML-webpack-plugin in `webpack.config.js` (Move the `src/index.html` to `assets/` directory)
 ```javascript
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -105,7 +105,7 @@ module.exports = {
 };
 ```
 
->- What are the [configuration options](https://github.com/jantimon/html-webpack-plugin#options) for HTML webpack plugin?
-
-
+> - What are the [configuration options](https://github.com/jantimon/html-webpack-plugin#options) for HTML webpack plugin?
+  - Delete the `dist/index.html` file and run `npm run build-dev`
+    >- What are the changes in `dist/index.html` compared to 'assets/index.html'
 
