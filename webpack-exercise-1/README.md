@@ -40,6 +40,8 @@ This is an **individual** exercise. The purpose of this exercise is to practice 
 8. You are allowed to use the JS codes in [modularity-example-3](https://github.com/janakanuwan/web-page-design/tree/master/modularity-example-3), but code must be simplified as much as possible.
 9. [Optional] Add the test codes using '[Jest](https://jestjs.io/docs/en/getting-started)' for the filtering, sorting and parsing.
 
+10. Before/after compressing your project folder for final submission, please make sure you have **REMOVED** the `node_modules` directory final compressed files. (Why? some are platform dependent and they take considerable space)
+
 ## Deliverables:
 - The **project folder** with name `Tutorial3_<MATRIC_NUMBER>`
 - An **instruction file** on how to the run the code (e.g. _README.md_ file) **inside** your _project folder_

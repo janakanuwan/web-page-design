@@ -34,6 +34,7 @@ npm install --save-dev webpack
 npm install --save-dev webpack-cli
 ```
 > - What has changed in `package.json` ?
+> - What is meant by `"webpack": "^4.29.4"` ? Hint: [Semantic Versioning](https://bytearcher.com/articles/semver-explained-why-theres-a-caret-in-my-package-json/)
 > - What is meant by '--save-dev' command argument?
 
   - Add `{"private": true}` to `package.json` prevent an accidental publish of your code
@@ -114,7 +115,7 @@ const tutorialInfo = function () {
 tutorialInfo();
 ```	
 
-12. Open the `dist/index.html` in browser directly 
+12. Open the `dist/index.html` in browser directly.
 > - What is the protocol used by browser to display the file?
 > - Are the images, style-sheets and JavaScripts loaded by browser?
 > - Can you perform server communication (e.g. AJAX)?
