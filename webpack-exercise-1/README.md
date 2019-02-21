@@ -4,7 +4,7 @@
 March 7, 2019, 23:59 (Wednesday of Week 7)
 
 ## Description
-This is an **individual** exercise. The purpose of this exercise is to practice the concepts learned in the Tutorial 3 and Tutorial 2. You will carry out the same example at [modularity-example-3](https://github.com/janakanuwan/web-page-design/tree/master/modularity-example-3) as the exercise with `webpack`, `Sass` and `npm` with a different modified data set.
+This is an **individual** exercise. The purpose of this exercise is to practice the concepts learned in the Tutorial 3 and Tutorial 2. You will carry out the same example at [modularity-example-3](https://github.com/janakanuwan/web-page-design/tree/master/modularity-example-3) as the exercise with `npm`, `webpack` and `Sass`  with a different modified data set.
 
 **Required output:**
 ![Web Page](https://github.com/janakanuwan/web-page-design/blob/master/modularity-example-3/My%20Super%20Heros.png)
