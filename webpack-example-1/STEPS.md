@@ -92,7 +92,7 @@ npm run build
 
 9. Run npm script "build" and see the `dist/main.js` in text editor (What are the observations?)
 
-10. Let's copy the `index.html` to `dist` directory and add `main.js` to load (add following to <body>)
+10. Let's copy the `index.html` to `dist` directory and add `main.js` to load (add following to `<body>`)
 ```html
 <script src="main.js"></script>
 ```

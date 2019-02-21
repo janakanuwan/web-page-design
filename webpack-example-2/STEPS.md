@@ -3,7 +3,7 @@
 
 ## steps
 
-1. Install `sass-loader` and `node-sass` (as development depedency)
+1. Install `sass-loader` and `node-sass` (as development dependencies)
 ```bash
 npm install sass-loader node-sass webpack --save-dev
 ```

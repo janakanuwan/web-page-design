@@ -1,7 +1,7 @@
 # webpack-exercise-1
 
 ## Due Date:
-March 7, 2019, 23:59 (Wednesday of Week 7)
+March 7, 2019, 23:59 (Thursday of Week 7)
 
 ## Description
 This is an **individual** exercise. The purpose of this exercise is to practice the concepts learned in the Tutorial 3 and Tutorial 2. You will carry out the same example at [modularity-example-3](https://github.com/janakanuwan/web-page-design/tree/master/modularity-example-3) as the exercise with `npm`, `webpack` and `Sass`  with a different modified data set.
@@ -40,8 +40,8 @@ This is an **individual** exercise. The purpose of this exercise is to practice 
 8. You are allowed to use the JS codes in [modularity-example-3](https://github.com/janakanuwan/web-page-design/tree/master/modularity-example-3), but code must be simplified as much as possible.
 9. [Optional] Add the test codes using '[Jest](https://jestjs.io/docs/en/getting-started)' for the filtering, sorting and parsing.
 
-## Deliverable:
-- The **project folder** with your Matric Number
+## Deliverables:
+- The **project folder** with name `Tutorial3_<MATRIC_NUMBER>`
 - An **instruction file** on how to the run the code (e.g. _README.md_ file) **inside** your _project folder_
 
 ## Submitting Exercise
@@ -50,3 +50,4 @@ All deliverables should be archived into a .zip file with the following naming c
 Tutorial3_<MATRIC_NUMBER>.zip
 ```
 submitted to the IVLE "Tutorial 3 Exercise" workbin ("Files" > "Tutorials" > "Tutorial 3 Exercise") before March 7, 2019, 23:59.
+
