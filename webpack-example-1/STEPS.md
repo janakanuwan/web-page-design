@@ -51,7 +51,6 @@ npm run build
 7. Create the directory structure (`src`, `test`, `assets` inside the project directory)
 ```sh
 mkdir src  		# to keep source codes
-mkdir test 		# to keep test codes
 mkdir assets	# to keep assets (images, style sheets, static files)
 ```
 
