@@ -166,12 +166,9 @@ module.exports = {
   }
   // NOTE: you may need to add leading or trailing comma (,) to separate 'devServer' from the rest
 };
-
-
-// // 
 ```
 > - Q1: How to change the hosting port?
-> - Q2: How to avoid the publication of `path.join(__dirname, 'dist')` both in 'deveServer' and 'output' ?
+> - Q2: How to avoid the duplication of `path.join(__dirname, 'dist')` both in 'deveServer' and 'output' ?
 
 15. Enable [hot module replacement](https://webpack.js.org/concepts/hot-module-replacement/)
 	- Change `{"start": "webpack-dev-server --mode development"}` to `{"start": "webpack-dev-server --mode development --hot --inline"}` in `pacakge.json`
