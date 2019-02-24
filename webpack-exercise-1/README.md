@@ -11,7 +11,7 @@ This is an **individual** exercise. The purpose of this exercise is to practice 
 
 ### Instructions
 1. Create a directory in the format  `Tutorial3_<MATRIC_NUMBER>`.
-2. Initialize your project using `npm` inside that directory. Use **your name** as the author and **Tutorial 2 - Exercise - <MATRIC_NUMBER>** as the name of the project. You will compress this directory and upload it to IVLE.
+2. Initialize your project using `npm` inside that directory. Use **your name** as the author and **Tutorial 3 - Exercise - <MATRIC_NUMBER>** as the name of the project. You will compress this directory and upload it to IVLE.
 3. Download the [data file](https://github.com/janakanuwan/web-page-design/blob/master/webpack-exercise-1/data/data.js) and [images](https://github.com/janakanuwan/web-page-design/blob/master/webpack-exercise-1/data/images.zip) (Compressed, need to uncompress). You must use this data set.
 >- NOTE: Now the data object has the image file name instead of image URL!
 ```javascript
