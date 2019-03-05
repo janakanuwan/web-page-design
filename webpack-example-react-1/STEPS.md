@@ -49,6 +49,7 @@ module.exports = {
 	- Add the 'jsx' to 'babel-loader' 
 ```javascript
 module.exports = {
+
 	entry: './src/index.jsx',
 
 
@@ -56,7 +57,7 @@ module.exports = {
 		rules: [
 			
 			{
-				test: /\.js[x]$/,
+				test: /\.(js|jsx)$/,
 				exclude: /(node_modules)/,
 				use: {
 					loader: 'babel-loader',
@@ -70,7 +71,7 @@ module.exports = {
 };
 ```
 
-	- Add the 'jsx' file support to 
+	- Add React code to `src/index.jsx`
 
 ```javascript
 // src/index.js -> src/index.jsx
@@ -80,24 +81,22 @@ import './../assets/styles/appStyle.scss'
 import React from 'React'
 import ReactDOM from 'react-dom'
 
-const TutorialInfo = (props)  => {
+// ReactComponent: using functions
+const TutorialInfo = () => {
 	console.log('TutorialInfo');
-	console.log(props);
-
-	const {id, concept} = props;
 
 	return (
 		<div>
-			<h1>Tutorial {id}</h1>
-			<p>This tutorial try to explain the basic concepts of {concept}</p>
+			<h1>Tutorial 4</h1>
+			<p>This tutorial try to explain the basic concepts of React</p>
 		</div>
 	);
 };
 
-
 ReactDOM.render(
-  <TutorialInfo props={...{id: 4, concept: 'React'}}/>,
+  <TutorialInfo />,
   document.getElementById('container')
 );
 
 ```
+

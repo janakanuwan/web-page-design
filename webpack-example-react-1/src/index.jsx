@@ -3,22 +3,92 @@ import './../assets/styles/appStyle.scss'
 import React from 'React'
 import ReactDOM from 'react-dom'
 
-const TutorialInfo = (props)  => {
+// ReactComponent: using functions
+const TutorialInfo = () => {
 	console.log('TutorialInfo');
-	console.log(props);
-
-	const {id, concept} = props;
 
 	return (
 		<div>
-			<h1>Tutorial {id}</h1>
-			<p>This tutorial try to explain the basic concepts of {concept}</p>
+			<h1>Tutorial 4</h1>
+			<p>This tutorial try to explain the basic concepts of React</p>
 		</div>
 	);
 };
 
-
 ReactDOM.render(
-  <TutorialInfo props={...{id: 4, concept: 'React'}}/>,
+  <TutorialInfo />,
   document.getElementById('container')
 );
+
+
+
+// // ReactComponent: using class
+// class TutorialInfo1 extends React.Component {
+//   render() {
+//   	console.log('TutorialInfo1');
+//     return (
+// 		<div>
+// 			<h1>Tutorial 4</h1>
+// 			<p>This tutorial try to explain the basic concepts of React 1</p>
+// 		</div>
+//     );
+//   }
+// }
+
+// ReactDOM.render(
+//   <TutorialInfo1 />,
+//   document.getElementById('container')
+// );
+
+
+// // React Component with variables
+// const TutorialInfo2 = (props)  => {
+// 	console.log('TutorialInfo2');
+// 	console.log(props);
+
+// 	// QUESTION: Why props?
+// 	// QUESTION: Can we avoid this?
+
+// 	return (
+// 		<div>
+// 			<h1>Tutorial {props.data.id}</h1>
+// 			<p>This tutorial try to explain the basic concepts of {props.data.concept}</p>
+// 		</div>
+// 	);
+// };
+
+// ReactDOM.render(
+//   <TutorialInfo2 data={{id: 4, concept: 'React 2'}}/>,
+//   document.getElementById('container')
+// );
+
+
+// // React Component with variables with class
+// class TutorialInfo3 extends React.Component{
+// 	// constructor(props) {
+// 	// 	super(props);
+
+// 	// 	console.log('TutorialInfo3');
+// 	// 	console.log(props);
+// 	// }
+
+// 	render(){
+// 		return (
+// 			<div>
+// 				<h1>Tutorial {this.props.data.id}</h1>
+// 				<p>This tutorial try to explain the basic concepts of {this.props.data.concept}</p>
+// 			</div>
+// 		);
+// 	}
+	
+// };
+
+// ReactDOM.render(
+//   <TutorialInfo3 data={{id: 4, concept: 'React 3'}}/>,
+//   document.getElementById('container')
+// );
+
+
+
+
+
