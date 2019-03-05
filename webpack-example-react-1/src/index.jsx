@@ -41,6 +41,12 @@ ReactDOM.render(
 // );
 
 
+
+
+// function capitalize(text){
+// 	return text.toUpperCase();
+// }
+
 // // React Component with variables
 // const TutorialInfo2 = (props)  => {
 // 	console.log('TutorialInfo2');
@@ -52,7 +58,7 @@ ReactDOM.render(
 // 	return (
 // 		<div>
 // 			<h1>Tutorial {props.data.id}</h1>
-// 			<p>This tutorial try to explain the basic concepts of {props.data.concept}</p>
+// 			<p>This tutorial try to explain the basic concepts of {capitalize(props.data.concept)}</p>
 // 		</div>
 // 	);
 // };
@@ -61,6 +67,8 @@ ReactDOM.render(
 //   <TutorialInfo2 data={{id: 4, concept: 'React 2'}}/>,
 //   document.getElementById('container')
 // );
+
+
 
 
 // // React Component with variables with class
@@ -73,6 +81,7 @@ ReactDOM.render(
 // 	// }
 
 // 	render(){
+//		// QUESTION: Why do we need to use 'this.props' ?
 // 		return (
 // 			<div>
 // 				<h1>Tutorial {this.props.data.id}</h1>
