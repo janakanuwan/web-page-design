@@ -52,9 +52,14 @@ ReactDOM.render(
 // 	console.log('TutorialInfo2');
 // 	console.log(props);
 
-// 	// QUESTION: Why props?
+// 	// QUESTION: What is 'props'?
 // 	// QUESTION: Can we avoid this?
 
+//	// QUESTIONS: 
+//		// - How the 'props' are used to pass data? 
+//		// - Can we change the values in 'props'?
+//		// - Instead of 'props.data.id' can we directly use 'data.id'?
+//		// - How functions are used inside the 'jsx' syntax?
 // 	return (
 // 		<div>
 // 			<h1>Tutorial {props.data.id}</h1>
@@ -63,6 +68,7 @@ ReactDOM.render(
 // 	);
 // };
 
+// // QUESTION: How the data is passed to React component? 
 // ReactDOM.render(
 //   <TutorialInfo2 data={{id: 4, concept: 'React 2'}}/>,
 //   document.getElementById('container')
