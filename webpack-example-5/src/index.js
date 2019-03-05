@@ -14,7 +14,7 @@ const tutorialInfo = function (data) {
 	container.appendChild(description);
 };
 
-tutorialInfo({id: 4, concept: 'Bebel'});
+tutorialInfo({id: 4, concept: 'Babel'});
 
 
 const printFirst = (list) => {
