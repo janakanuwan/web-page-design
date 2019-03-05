@@ -46,7 +46,7 @@ module.exports = {
 3. Let's convert the early example to React code. 
 	- Rename the `src/index.js` to `src/index.jsx`
 	- Change the entry point in `webpack.config.js` to support new file
-	- Add the 'jsx' to 'babel-loader' 
+	- Enable Babel to support the 'jsx' files 
 ```javascript
 module.exports = {
 
@@ -71,7 +71,7 @@ module.exports = {
 };
 ```
 
-	- Add React code to `src/index.jsx`
+	- Add React (JS) code to `src/index.jsx`
 
 ```javascript
 // src/index.js -> src/index.jsx
