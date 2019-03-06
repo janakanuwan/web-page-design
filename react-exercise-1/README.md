@@ -29,7 +29,7 @@ This is an **individual** exercise. The purpose of this exercise is to practice 
 2. Setting up a mock server to load data via HTTP.
 	- Install '[json-server](https://github.com/typicode/json-server)' as a development dependency (i.e. `npm i -D json-server`).
 	- Create a `test` directory inside project directory (e.g. `mkdir test`).
-	- Copy [heroes_db.json]() to `test` directory. (Original Source: [superhero-api](https://github.com/akabab/superhero-api))
+	- Copy [heroes_db.json](https://raw.githubusercontent.com/janakanuwan/web-page-design/master/webpack-example-react-3/test/heroes_db.json) to `test` directory. (Original Source: [superhero-api](https://github.com/akabab/superhero-api))
 	- Add `json-server --watch test/heroes_db.json` to `packge.json` as a script.
 	- Start the server using `npm run mock:REST` on a different terminal. (Why? This process will not exit until server runs)
 	- Open the browser and go to `http://localhost:3000/heroes/` and you should be able to see all heroes.
