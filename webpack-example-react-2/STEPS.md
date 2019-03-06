@@ -4,7 +4,7 @@
 ## steps
 
 
-1. Create the JSX file to show hero information
+1. Create React components to show hero information
 ```javascript
 // src/view/PowerStats.jsx
 import React from 'react'
@@ -213,3 +213,5 @@ const hero1 = {
 };
 
 ```
+
+6. How will to extend it to support multiple heroes?
