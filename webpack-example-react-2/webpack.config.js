@@ -22,14 +22,29 @@ module.exports = {
 				use: ['style-loader', 'css-loader'],
 			},
 			{
-				test: /\.(js|jsx)$/,
+				test: /\.jsx?$/,
 				exclude: /(node_modules)/,
+				resolve: {
+					extensions: [".js", ".jsx"]
+				},
 				use: {
 					loader: 'babel-loader',
 					options: {
 					  presets: ['@babel/preset-env', '@babel/preset-react']
 					}
 				}
+			},
+			{
+				test: /\.(png|jpg|gif)$/,
+				use: [
+					{
+						loader: 'url-loader',
+						options: {
+							name: 'media/[name].[ext]',
+							limit: 8192
+						}
+					}
+				]
 			}
 		]
 	},
@@ -41,5 +56,5 @@ module.exports = {
 	devServer: {
 		contentBase: path.join(__dirname, 'dist')
 	},
-	 devtool: 'cheap-module-source-map'
+	devtool: 'cheap-module-source-map'
 };

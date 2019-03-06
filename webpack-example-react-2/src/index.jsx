@@ -1,21 +1,28 @@
-import './../assets/styles/appStyle.scss'
+// NOTE: we add the extension also so that webpack can resolve them.
+// How to remove this extension?
+import './../assets/styles/hero-item.css'
+import './../assets/styles/hero-container.css'
 
-import React from 'React'
+// React
+import React from 'react'
 import ReactDOM from 'react-dom'
 
-// ReactComponent: using functions
-const TutorialInfo = () => {
-	console.log('TutorialInfo');
+// utilities
+import heroUtil from './util/heroUtil'
 
-	return (
-		<div>
-			<h1>Tutorial 4</h1>
-			<p>This tutorial try to explain the basic concepts of React</p>
-		</div>
-	);
-};
+// data
+import rawData from './data'
+
+// React component
+import MyHeroes from './view/MyHeroes'
+
+
+// ReactComponent: using functions
+const data = heroUtil.parseHeroData(rawData);
 
 ReactDOM.render(
-  <TutorialInfo />,
+  <MyHeroes className="hero-container" heroes={data} />,
   document.getElementById('container')
 );
+
+
