@@ -11,7 +11,7 @@ npm install --save react react-dom
 >- Why do we want to save 'react' and 'react-dom' as production dependencies instead of development dependencies?
 >- What was the change in `package.json`?
 
-2. Install '(babel-preset-react)[https://babeljs.io/docs/en/babel-preset-react]' to support react syntax (specially JSX)
+2. Install '[babel-preset-react](https://babeljs.io/docs/en/babel-preset-react)' to support react syntax (specially JSX)
 ```bash
 npm install --save-dev @babel/preset-react
 # npm i -D @babel/preset-react
