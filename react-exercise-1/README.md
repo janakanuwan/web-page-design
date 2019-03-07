@@ -22,8 +22,9 @@ This is an **individual** exercise. The purpose of this exercise is to practice 
 4. Complete the guide by typing code instead of copying directly from web page.
 
 ### Part 3: Instructions
-**Required output:**
-![Web Page](https://github.com/janakanuwan/web-page-design/blob/master/modularity-example-3/My%20Super%20Heros.png)
+**Objective**: Extend the [webpack-example-react-3](https://github.com/janakanuwan/web-page-design/tree/master/webpack-example-react-3) to support searching heroes
+
+![Web Page](./new_image.png)
 
 1. Use `npm` to create a new project/package named as '**tutorial4-<MATRIC_NUMBER>**' (e.g. _tutorial4-a0123456b_) which should be used for this part. Use **your name** as the author.
 2. Setting up a mock server to load data via HTTP.
@@ -92,8 +93,25 @@ This is an **individual** exercise. The purpose of this exercise is to practice 
     }
   }
 ```
+4. Use all the powers (now there are 6 types instead of 4) in Hero's view
+```javascript
+// e.g.
+powerstats: {
+  intelligence: 38,
+  strength: 100,
+  speed: 17,
+  durability: 80,
+  power: 24,
+  combat: 64
+}
+```
+5. Add buttons to increment and decrement all powers (You are free to choose the button types, widths, sizes, icons)
+  - NOTE: since there are 12 buttons, think about how you show them to a user (Hint: Use another React component)
 
-4. 
+6. You have to add a "search" (text) field to each publisher and when you type, heroes (whose name or part of name) matching the typed text should be displayed.
+
+7. You should only use React state (e.g. no redux)
+
 
 ## Final Instructions
 1. Compress above 3 parts (directories) in to `Tutorial4_<MATRIC_NUMBER>.zip` **without** `node_modules` in each directory.
