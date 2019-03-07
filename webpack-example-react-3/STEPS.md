@@ -13,6 +13,8 @@ NOTE: Now 'Powers' are shown in a bar chart.
 ```bash
 npm i -S recharts
 ```
+>- Why it's added as (production) dependency?
+
 2. Add a [barchart](http://recharts.org/en-US/examples/SimpleBarChart) to `src/view/PowerStats.jsx`
 ```javascript
 import React from 'react'
@@ -68,8 +70,8 @@ class PowerStats extends React.Component {
 }
 ```
 
->- What is the relationship between "<Bar dataKey='power1' />" and graph legends and values?
->- What is the relationship between "<XAxis dataKey='name' />" and graph X-label?
+>- What is the relationship between `<Bar dataKey='power1' />` and graph legends and values?
+>- What is the relationship between `<XAxis dataKey='name' />` and graph X-label?
 >- How to fix the legends to show 'intelligence', 'strength' and 'speed'?
 
 3. Let's add buttons to `src/view/Hero.jsx`
