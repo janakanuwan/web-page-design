@@ -144,7 +144,8 @@ class Hero extends React.Component{
 >- Why do you have to bind functions inside constructor?
 
 5. Using local state to show values
-    - Where should we keep that state? How do we decide that?
+    - Where should we keep that state? How do we decide that? Hint: [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
+    - Which data should we keep in state?
 
 ```javascript
 // src/view/Hero.jsx
@@ -188,6 +189,12 @@ class Hero extends React.Component{
 ```
 
 6. Changing the state based on events
+    - What is the expected behavior of state when you click "Increase Strength" (or "Decrease Strength")?
+    - How can we change state? Hint: Use the inbuilt `this.setState()` to update the component's local state
+    - IMPORTANT: Three things you should know about [setState()](https://reactjs.org/docs/state-and-lifecycle.html#using-state-correctly)
+           - Do Not Modify State Directly 
+           - State Updates May Be Asynchronous
+           - State Updates are Merged
 
 ```javascript
 // src/view/Hero.jsx
