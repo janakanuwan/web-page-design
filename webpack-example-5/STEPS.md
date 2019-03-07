@@ -3,7 +3,7 @@
 
 ## steps
 
-1. Let's use the similar project from last week (with `webpack webpack-cli webpack-dev-server sass-loader node-sass style-loader css-loader html-webpack-plugin jest` installed as development dependencies)
+1. Let's use the project from last week (with `webpack webpack-cli webpack-dev-server sass-loader node-sass style-loader css-loader html-webpack-plugin jest` installed as development dependencies)
 ```javscript
 // package.json (DO NOT ADD THIS LINE)
 {

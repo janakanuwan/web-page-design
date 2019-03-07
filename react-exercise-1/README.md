@@ -1,7 +1,7 @@
 # react-exercise-1
 
 ## Due Date:
-March 15, 2019, 23:59 (Friday of Week 8)
+March 22, 2019, 23:59 (Friday of Week 9)
 
 ## Description
 This is an **individual** exercise. The purpose of this exercise is to practice the concepts learned in the Tutorial 4 and React. This exercise has **three** independent parts.
