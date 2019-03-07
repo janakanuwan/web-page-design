@@ -1,12 +1,13 @@
 # webpack-example-react-3
 
-
-## steps
-
 We want to change the UI as follows:
 ![Web Page](./new_hero.png)
 
 NOTE: Now 'Powers' are shown in a bar chart.
+
+## steps
+
+
 
 1. Let's use '[Recharts](http://recharts.org/en-US/)'. Install '[recharts](https://github.com/recharts/recharts)' as a dependency
 ```bash
