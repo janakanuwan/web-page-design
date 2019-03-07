@@ -120,13 +120,13 @@ powerstats: {
 2. Submit it to IVLE.
 
 ## Deliverables:
-- The **project folder** with name `Tutorial4_<MATRIC_NUMBER>`
-- An **instruction file** on how to the run the code (e.g. _README.md_ file) **inside** your _project folder_
+- The **compressed folder** with name `Tutorial4_<MATRIC_NUMBER>` for all three parts
+- An **instruction file** on how to the run the code (e.g. _README.md_ file) **inside** each of your _project folders_
 
 ## Submitting Exercise
 All deliverables should be archived into a .zip file with the following naming convention:
 ```
 Tutorial4_<MATRIC_NUMBER>.zip
 ```
-submitted to the IVLE "Tutorial 4 Exercise" workbin ("Files" > "Tutorials" > "Tutorial 4 Exercise") before March 15, 2019, 23:59.
+submitted to the IVLE "Tutorial 4 Exercise" workbin ("Files" > "Tutorials" > "Tutorial 4 Exercise") before March 22, 2019, 23:59.
 
