@@ -71,14 +71,14 @@ module.exports = {
 };
 ```
 
-	- Add React (JS) code to `src/index.jsx`
+	- Add React (JS) code to `src/index.jsx` (Creating React component)
 
 ```javascript
 // src/index.js -> src/index.jsx
 
 import './../assets/styles/appStyle.scss'
 
-import React from 'React'
+import React from 'react'
 import ReactDOM from 'react-dom'
 
 // ReactComponent: using functions
@@ -106,3 +106,86 @@ ReactDOM.render(
 >- What does the 'ReactDOM.render' do?
 >- Can we add multiple components/elements to 'ReactDOM.render' to render at the same time?
 >- How can we render multiple elements at the same time? Hint: DOM tree
+
+4. Different ways of creating React components
+
+>- React component using class syntax
+```javascript
+class TutorialInfo1 extends React.Component {
+  render() {
+  	console.log('TutorialInfo1');
+    return (
+		<div>
+			<h1>Tutorial 4</h1>
+			<p>This tutorial try to explain the basic concepts of React 1</p>
+		</div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <TutorialInfo1 />,
+  document.getElementById('container')
+);
+```
+
+>- React component with variables
+```javascript
+function capitalize(text){
+	return text.toUpperCase();
+}
+
+const TutorialInfo2 = (props)  => {
+	console.log('TutorialInfo2');
+	console.log(props);
+
+	// QUESTION: What is 'props'?
+	// QUESTION: What can you see in console about 'props'? What are the properties of 'props'?
+	// QUESTION: Can we avoid this?
+
+	// QUESTIONS: 
+		// - How the 'props' are used to pass data? 
+		// - Can we change the values in 'props'?
+		// - Instead of 'props.data.id' can we directly use 'data.id'?
+		// - How functions are used inside the 'jsx' syntax?
+	return (
+		<div>
+			<h1>Tutorial {props.data.id}</h1>
+			<p>This tutorial try to explain the basic concepts of {capitalize(props.data.concept)}</p>
+		</div>
+	);
+};
+
+// QUESTION: How the data is passed to React component? 
+ReactDOM.render(
+  <TutorialInfo2 data={{id: 4, concept: 'React 2'}}/>,
+  document.getElementById('container')
+);
+```
+>- React component with classes (constructor)
+```javascript
+class TutorialInfo3 extends React.Component{
+	constructor(props) {
+		super(props);
+
+		console.log('TutorialInfo3');
+		console.log(props);
+	}
+
+	render(){
+		// QUESTION: Why do we need to use 'this.props' ?
+		return (
+			<div>
+				<h1>Tutorial {this.props.data.id}</h1>
+				<p>This tutorial try to explain the basic concepts of {this.props.data.concept}</p>
+			</div>
+		);
+	}
+	
+};
+
+ReactDOM.render(
+  <TutorialInfo3 data={{id: 4, concept: 'React 3'}}/>,
+  document.getElementById('container')
+);
+```
