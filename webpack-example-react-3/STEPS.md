@@ -3,19 +3,21 @@
 
 ## steps
 
+We want to change the UI as follows:
+![Web Page](./new_hero.png)
 
-1. Instead of showing 'Powers' as numbers, let's show them in a bar chart
-2. Install '[recharts](https://github.com/recharts/recharts)' as a dependency
+NOTE: Now 'Powers' are shown in a bar chart.
+
+1. Let's use '[Recharts](http://recharts.org/en-US/)'. Install '[recharts](https://github.com/recharts/recharts)' as a dependency
 ```bash
 npm i -S recharts
 ```
-3. Add a [barchart](http://recharts.org/en-US/examples/SimpleBarChart) to `src/view/PowerStats.jsx`
+2. Add a [barchart](http://recharts.org/en-US/examples/SimpleBarChart) to `src/view/PowerStats.jsx`
 ```javascript
-import React, { PureComponent } from 'react';
+import React from 'react'
 import {
-  BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
-} from 'recharts';
-
+    BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+} from 'recharts'
 
 class HeroPowerChart extends React.Component{
 
@@ -65,4 +67,79 @@ class PowerStats extends React.Component {
 }
 ```
 
->- What is a 'PureComponent'?
+>- What is the relationship between "<Bar dataKey='power1' />" and graph legends and values?
+>- What is the relationship between "<XAxis dataKey='name' />" and graph X-label?
+>- How to fix the legends to show 'intelligence', 'strength' and 'speed'?
+
+3. Let's add buttons to `src/view/Hero.jsx`
+```javascript
+class Hero extends React.Component{
+
+    constructor(props){
+        super(props);
+    }
+
+    render(){
+        const {hero} = this.props;
+
+        return (
+            <div className={"hero-item"}>
+                <h3>{hero.name}</h3>
+                <img src={hero.image}  alt={hero.image}/>
+                
+                <button>Increase Strength</button>
+                <button>Decrease Strength</button>
+                
+                <PowerStats data={hero.powerstats}/>
+            </div>
+        );
+    }
+}
+```
+
+4. Let's handle events to change the chart values
+```javascript
+class Hero extends React.Component{
+
+    constructor(props){
+        super(props);
+
+        // This binding is necessary to make `this` work in the callback
+        this.increaseStrength = this.increaseStrength.bind(this);
+        this.decreaseStrength = this.decreaseStrength.bind(this);
+    }
+
+    increaseStrength(e) {
+        // TODO
+        console.log(e);
+    }
+
+    decreaseStrength(e) {
+        // TODO
+        console.log(e);
+    }
+
+    render(){
+        const {hero} = this.props;
+
+        return (
+            <div className={"hero-item"}>
+                <h3>{hero.name}</h3>
+                <img src={hero.image}  alt={hero.image}/>
+
+                <button onClick={this.increaseStrength}>Increase Strength</button>
+                <button onClick={this.decreaseStrength}>Decrease Strength</button>
+
+                <PowerStats data={hero.powerstats}/>
+            </div>
+        );
+    }
+}
+```
+>- Why 'onClick' is in camel case instead of 'onclick' as in HTML button format?
+>- Why do you have to bind functions inside constructor?
+
+```javascript
+
+```
+

@@ -53,6 +53,7 @@ ReactDOM.render(
 // 	console.log(props);
 
 // 	// QUESTION: What is 'props'?
+// 	// QUESTION: What can you see in console about 'props'? What are the properties of 'props'?
 // 	// QUESTION: Can we avoid this?
 
 //	// QUESTIONS: 
