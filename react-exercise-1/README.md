@@ -106,11 +106,13 @@ powerstats: {
 }
 ```
 5. Add buttons to increment and decrement all powers (You are free to choose the button types, widths, sizes, icons)
-  - NOTE: since there are 12 buttons, think about how you show them to a user (Hint: Use another React component)
+  - NOTE: since there are 12 buttons, think about the user experience
 
 6. You have to add a "search" (text) field to each publisher and when you type, heroes (whose name or part of name) matching the typed text should be displayed.
 
 7. You should only use React state (e.g. no redux)
+
+8. You are free to change sizes/properties of any component or create new components to make the look and feel of web page better
 
 
 ## Final Instructions
