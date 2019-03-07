@@ -73,12 +73,11 @@ class PowerStats extends React.Component {
 
 3. Let's add buttons to `src/view/Hero.jsx`
 ```javascript
+// src/view/Hero.jsx
 class Hero extends React.Component{
 
-    constructor(props){
-        super(props);
-    }
-
+    // ...
+    
     render(){
         const {hero} = this.props;
 
@@ -87,6 +86,7 @@ class Hero extends React.Component{
                 <h3>{hero.name}</h3>
                 <img src={hero.image}  alt={hero.image}/>
                 
+                {/* New buttons */}
                 <button>Increase Strength</button>
                 <button>Decrease Strength</button>
                 
@@ -99,6 +99,7 @@ class Hero extends React.Component{
 
 4. Let's handle events to change the chart values
 ```javascript
+// src/view/Hero.jsx
 class Hero extends React.Component{
 
     constructor(props){
@@ -139,7 +140,75 @@ class Hero extends React.Component{
 >- Why 'onClick' is in camel case instead of 'onclick' as in HTML button format?
 >- Why do you have to bind functions inside constructor?
 
-```javascript
+5. Using local state to show values
+    - Where should we keep that state? How do we decide that?
 
+```javascript
+// src/view/Hero.jsx
+class Hero extends React.Component{
+
+    constructor(props){
+        super(props);
+
+        const {hero} = props;
+        // NOTE: adding local state to class
+        // NOTE: we create a local state, and set the initial values from 'props'
+        this.state = {
+            intelligence: hero.powerstats.intelligence,
+            strength: hero.powerstats.strength,
+            speed: hero.powerstats.speed
+        };
+
+        // This binding is necessary to make `this` work in the callback
+        this.increaseStrength = this.increaseStrength.bind(this);
+        this.decreaseStrength = this.decreaseStrength.bind(this);
+    }
+    
+    // ...
+
+    render(){
+        const {hero} = this.props;
+
+        return (
+            <div className={"hero-item"}>
+                <h3>{hero.name}</h3>
+                <img src={hero.image}  alt={hero.image}/>
+
+                <button onClick={this.increaseStrength}>Increase Strength</button>
+                <button onClick={this.decreaseStrength}>Decrease Strength</button>
+                {/* NOTE: Now we use 'state' instead of 'props' */}
+                <PowerStats data={this.state}/>
+            </div>
+        );
+    }
+}
 ```
 
+6. Changing the state based on events
+
+```javascript
+// src/view/Hero.jsx
+
+// ...
+
+    increaseStrength() {
+        // NOTE: we do not directly change the state since it should be immutable
+        // NOTE: we can assign a new value to a property of the state instead of replacing whole state!
+        console.log("Before clicking Increase Strength Button");
+        console.log(this.state);
+        this.setState( state => ({
+            strength: state.strength + 5
+        }));
+        console.log("After clicking Increase Strength Button");
+        console.log(this.state);
+    }
+
+    decreaseStrength() {
+        this.setState( state => ({
+            strength: state.strength - 5
+        }));
+    }
+
+// ...
+
+```
