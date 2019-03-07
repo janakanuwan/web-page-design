@@ -155,7 +155,7 @@ const tutorialInfo = function (data) {
 	console.log('TutorialInfo');
 
 	const title = document.createElement('h2');
-	title.textContent = `Tutorial ${data.id}`;
+	title.textContent = `Tutorial ${data.id}`;      // [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 	
 	const description = document.createElement('p');
 	description.textContent = `This tutorial try to explain the basic concepts of ${data.concept}`;
@@ -175,7 +175,7 @@ tutorialInfo({id: 4, concept: 'Bebel'});
 // src/index.js
 
 const printFirst = (list) => {
-  const [a, ...rest] = lists
+  const [a, ...rest] = lists    // [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
   console.log(a);
   console.log(rest);
 };
