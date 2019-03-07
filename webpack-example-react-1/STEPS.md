@@ -8,8 +8,8 @@
 npm install --save react react-dom
 # npm i -S react react-dom
 ```
->- Why do we want to save 'react' and 'react-dom' as production dependencies instead of development dependencies?
 >- What was the change in `package.json`?
+>- Why do we want to save 'react' and 'react-dom' as (production) dependencies instead of development dependencies?
 
 2. Install '[babel-preset-react](https://babeljs.io/docs/en/babel-preset-react)' to support react syntax (specially JSX)
 ```bash
@@ -100,3 +100,9 @@ ReactDOM.render(
 
 ```
 
+>- Where do we use imported 'React'?
+>- What is the purpose of importing 'React'?
+>- What is a React Component?
+>- What does the 'ReactDOM.render' do?
+>- Can we add multiple components/elements to 'ReactDOM.render' to render at the same time?
+>- How can we render multiple elements at the same time? Hint: DOM tree
