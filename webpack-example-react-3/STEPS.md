@@ -13,7 +13,7 @@ NOTE: Now 'Powers' are shown in a bar chart.
 ```bash
 npm i -S recharts
 ```
->- Why it's added as (production) dependency?
+>- Why is it added as (production) dependency?
 
 2. Add a [barchart](http://recharts.org/en-US/examples/SimpleBarChart) to `src/view/PowerStats.jsx`
 ```javascript
@@ -141,11 +141,11 @@ class Hero extends React.Component{
 }
 ```
 >- Why 'onClick' is in camel case instead of 'onclick' as in HTML button format?
->- Why do you have to bind functions inside constructor?
+>- Why do you have to bind functions inside the constructor?
 
 5. Using local state to show values
     - Where should we keep that state? How do we decide that? Hint: [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
-    - Which data should we keep in state?
+    - Which data should we keep in the _state_?
 
 ```javascript
 // src/view/Hero.jsx
@@ -189,8 +189,8 @@ class Hero extends React.Component{
 ```
 
 6. Changing the state based on events
-    - What is the expected behavior of state when you click "Increase Strength" (or "Decrease Strength")?
-    - How can we change state? Hint: Use the inbuilt `this.setState()` to update the component's local state
+    - What is the expected behavior of the state when you click "Increase Strength" (or "Decrease Strength")?
+    - How can we change the state? Hint: Use the inbuilt `this.setState()` to update the component's local state
     - IMPORTANT: Three things you should know about [setState()](https://reactjs.org/docs/state-and-lifecycle.html#using-state-correctly)
            - Do Not Modify State Directly 
            - State Updates May Be Asynchronous

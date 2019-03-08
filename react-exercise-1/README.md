@@ -11,7 +11,7 @@ This is an **individual** exercise. The purpose of this exercise is to practice 
 **Objective**: Complete the [react tutorial](https://reactjs.org/tutorial/tutorial.html) using [create-react-app ](https://github.com/facebook/create-react-app)
 
 1. Use `app-1` as the package/project name for `create-react-app` command.
-2. Complete the tutorial by typing code instead of copying directly from web page.
+2. Complete the tutorial by typing code instead of copying directly from the web page.
 
 ### Part 2: Instructions
 **Objective**: Complete the [Thinking in React](https://reactjs.org/docs/thinking-in-react.html) using webpack
@@ -29,7 +29,7 @@ This is an **individual** exercise. The purpose of this exercise is to practice 
 1. Use `npm` to create a new project/package named as '**tutorial4-<MATRIC_NUMBER>**' (e.g. _tutorial4-a0123456b_) which should be used for this part. Use **your name** as the author.
 2. Setting up a mock server to load data via HTTP.
 	- Install '[json-server](https://github.com/typicode/json-server)' as a development dependency (i.e. `npm i -D json-server`).
-	- Create a `test` directory inside project directory (e.g. `mkdir test`).
+	- Create a `test` directory inside the project directory (e.g. `mkdir test`).
 	- Copy [heroes_db.json](https://raw.githubusercontent.com/janakanuwan/web-page-design/master/webpack-example-react-3/test/heroes_db.json) to `test` directory. (Original Source: [superhero-api](https://github.com/akabab/superhero-api))
 	- Add `json-server --watch test/heroes_db.json` to `packge.json` as a script.
 	- Start the server using `npm run mock:REST` on a different terminal. (Why? This process will not exit until server runs)
@@ -38,7 +38,7 @@ This is an **individual** exercise. The purpose of this exercise is to practice 
 
 
 3. You must use '[fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)' load the data from server (e.g. `http://localhost:3000/heroes/1` for hero with id=1) .
-**NOTE:** Now hero data is different than before! For image use 'images.sm'.
+**NOTE:** Now hero data is different than before! Hint: For image use 'images.sm' property as the image source.
 ```json
   {
     "id": 1,
@@ -108,7 +108,7 @@ powerstats: {
 5. Add buttons to increment and decrement all powers (You are free to choose the button types, widths, sizes, icons)
   - NOTE: since there are 12 buttons, think about the user experience
 
-6. You have to add a "search" (text) field to each publisher and when you type, heroes (whose name or part of name) matching the typed text should be displayed.
+6. You have to add a "search" (text) field to each publisher and when you type, heroes (whose name or part of the name) matching the typed text should be displayed.
 
 7. You should only use React state (e.g. no redux)
 
@@ -116,7 +116,7 @@ powerstats: {
 
 
 ## Final Instructions
-1. Compress above 3 parts (directories) in to `Tutorial4_<MATRIC_NUMBER>.zip` **without** `node_modules` in each directory.
+1. Compress above 3 parts (directories) into `Tutorial4_<MATRIC_NUMBER>.zip` **without** `node_modules` in each directory.
 2. Submit it to IVLE.
 
 ## Deliverables:
