@@ -14,7 +14,7 @@ This is an **individual** exercise. The purpose of this exercise is to practice 
 2. Complete the tutorial by typing code instead of copying directly from the web page.
 
 ### Part 2: Instructions
-**Objective**: Complete the [Thinking in React](https://reactjs.org/docs/thinking-in-react.html) using webpack <span style="background-color: #FFFF00">or (create-react-app)</span>
+**Objective**: Complete the [Thinking in React](https://reactjs.org/docs/thinking-in-react.html) using webpack <span style="background-color: #FFFF00">or create-react-app</span>
 
 1. Use `npm` to create a new project/package named as 'app-2' which should be used for this part.
 2. Read [Thinking in React](https://reactjs.org/docs/thinking-in-react.html) and follow the codes.
