@@ -14,14 +14,14 @@ This is an **individual** exercise. The purpose of this exercise is to practice 
 2. Complete the tutorial by typing code instead of copying directly from the web page.
 
 ### Part 2: Instructions
-**Objective**: Complete the [Thinking in React](https://reactjs.org/docs/thinking-in-react.html) using webpack
+**Objective**: Complete the [Thinking in React](https://reactjs.org/docs/thinking-in-react.html) using webpack <mark>or (create-react-app)</mark>
 
 1. Use `npm` to create a new project/package named as 'app-2' which should be used for this part.
 2. Read [Thinking in React](https://reactjs.org/docs/thinking-in-react.html) and follow the codes.
 3. Each class should reside in a separate JS/JSX file.
 4. Complete the guide by typing code instead of copying directly from web page.
 
-### Part 3: Instructions
+### Part 3: Instructions <mark>Optional</mark>
 **Objective**: Extend the [webpack-example-react-3](https://github.com/janakanuwan/web-page-design/tree/master/webpack-example-react-3) to support searching heroes
 
 ![Web Page](./new_image.png)
@@ -116,11 +116,11 @@ powerstats: {
 
 
 ## Final Instructions
-1. Compress above 3 parts (directories) into `Tutorial4_<MATRIC_NUMBER>.zip` **without** `node_modules` in each directory.
+1. Compress <strike>above 3 parts</strike> <mark>part 1 and part 2</mark> (directories) into `Tutorial4_<MATRIC_NUMBER>.zip` **without** `node_modules` in each directory. <mark>(If you already have completed all parts, feel free to upload part 3 as well)</mark>
 2. Submit it to IVLE.
 
 ## Deliverables:
-- The **compressed folder** with name `Tutorial4_<MATRIC_NUMBER>` for all three parts
+- The **compressed folder** with name `Tutorial4_<MATRIC_NUMBER>` for <strike>all three parts</stike> <mark>first two parts</mark>
 - An **instruction file** on how to the run the code (e.g. _README.md_ file) **inside** each of your _project folders_
 
 ## Submitting Exercise
