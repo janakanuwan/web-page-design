@@ -4,9 +4,9 @@ import {
 } from 'recharts'
 
 
-class HeroPowerChart extends React.Component{
+class HeroPowerChart extends React.Component {
 
-    render(){
+    render() {
         const {data} = this.props;
 
         return (
@@ -23,14 +23,25 @@ class HeroPowerChart extends React.Component{
                 <YAxis/>
                 <Tooltip/>
                 <Legend/>
-                <Bar dataKey="power1" fill="#8884d8"/>
-                <Bar dataKey="power2" fill="#82ca9d"/>
-                <Bar dataKey="power3" fill="#ffc658"/>
+                <Bar dataKey="intelligence" fill="#8884d8"/>
+                <Bar dataKey="strength" fill="#82ca9d"/>
+                <Bar dataKey="speed" fill="#ffc658"/>
             </BarChart>
         );
     }
 }
 
+
+const graphDataMapper = (data) => {
+    const {intelligence, strength, speed} = data;
+    return (
+        [
+            {
+                name: 'Powers', intelligence: intelligence, strength: strength, speed: speed,
+            }
+        ]
+    );
+};
 
 class PowerStats extends React.Component {
 
@@ -38,14 +49,8 @@ class PowerStats extends React.Component {
 
         const {data} = this.props;
 
-        const data1 = [
-            {
-                name: 'Powers', power1: 40, power2: 50, power3: 60,
-            }
-        ];
-
         return (
-            <HeroPowerChart data={data1}/>
+            <HeroPowerChart data={graphDataMapper(data)}/>
         );
     }
 }

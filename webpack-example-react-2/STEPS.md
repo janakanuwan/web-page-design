@@ -214,4 +214,4 @@ const hero1 = {
 
 ```
 
-6. How will to extend it to support multiple heroes?
+6. How will you extend above to support multiple heroes?

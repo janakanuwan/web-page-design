@@ -3,7 +3,7 @@
 
 ## steps
 
-1. Let's use the similar project from last week (with `webpack webpack-cli webpack-dev-server sass-loader node-sass style-loader css-loader html-webpack-plugin jest` installed as development dependencies)
+1. Let's use the project from last week (with `webpack webpack-cli webpack-dev-server sass-loader node-sass style-loader css-loader html-webpack-plugin jest` installed as development dependencies)
 ```javscript
 // package.json (DO NOT ADD THIS LINE)
 {
@@ -115,7 +115,7 @@ const tutorialInfo = function () {
 tutorialInfo();
 
 ```
->- If you just copied all files from old project and renamed as new project, you need to run `npm install` to load the dependencies.
+>- If you just copied all files from old project and renamed as a new project, you need to run `npm install` to load the dependencies.
 
 2. Install [babel-loader](https://github.com/babel/babel-loader) along with its dependencies (`@babel/core` and `@babel/preset-env`)
 ```bash
@@ -155,7 +155,7 @@ const tutorialInfo = function (data) {
 	console.log('TutorialInfo');
 
 	const title = document.createElement('h2');
-	title.textContent = `Tutorial ${data.id}`;
+	title.textContent = `Tutorial ${data.id}`;      // [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 	
 	const description = document.createElement('p');
 	description.textContent = `This tutorial try to explain the basic concepts of ${data.concept}`;
@@ -168,21 +168,21 @@ const tutorialInfo = function (data) {
 tutorialInfo({id: 4, concept: 'Bebel'});
 ```
 >- Go to 'index.js' via _console_ and observe the transpiled code!
->- What is the difference between it and actual code?
+>- What is the difference between transpiled code and the actual code?
 
-5.  Append the following to `src/index.js` and try to identify the error location using _inspect_ or _console_ .
+5.  Append the following to `src/index.js` and try to identify the error location using _'inspect'_ or _'console'_ .
 ```javascript
 // src/index.js
 
 const printFirst = (list) => {
-  const [a, ...rest] = lists
+  const [a, ...rest] = lists    // [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
   console.log(a);
   console.log(rest);
 };
 printFirst([1, 3, 5])
 ```
->- Where is the error? What if there are large number of codes and multiple people are editing the code?
->- Is the error shown in console is same as your source code? If not, why is that?
+>- Where is the error? What if there are a large number of codes and multiple people are editing the code?
+>- Is the error shown in the console is same as your source code? If not, why is that?
 
 6. Improving the debugging by mapping transformed code (which browser executes) to actual source code.
 	- Using a [source map](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)

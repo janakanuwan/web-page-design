@@ -17,3 +17,7 @@
   height: 150px;
   margin: 5px;
 }
+
+.hero-item > button{
+	font-size: 12px;
+}
