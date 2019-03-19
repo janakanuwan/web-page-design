@@ -2,7 +2,7 @@ import React from 'react';
 
 // Ref: https://codepen.io/marekdano/pen/bVNYpq
 
-class ToDoListItems extends React.Component {
+class ToDoListItemView extends React.Component {
     render() {
         const {items} = this.props;
         const itemList = items.map((item, index) => <li key={index}> {item} </li>)
@@ -17,12 +17,10 @@ class ToDoListItems extends React.Component {
 }
 
 
-// Ref: https://codepen.io/marekdano/pen/bVNYpq
-class ToDoListForm extends React.Component {
+class ToDoListFormView extends React.Component {
 
     constructor(props) {
         super(props);
-
         // https://reactjs.org/docs/uncontrolled-components.html
         this.formInput = React.createRef();
         this.onSubmit = this.onSubmit.bind(this);
@@ -51,11 +49,10 @@ class ToDoListForm extends React.Component {
 
 }
 
-class ToDoList extends React.Component {
+class ToDoListPresenter extends React.Component {
 
     constructor(props) {
         super(props);
-
         this.state = {
             items: []
         };
@@ -73,8 +70,8 @@ class ToDoList extends React.Component {
 
         return (
             <div>
-                <ToDoListItems items={this.state.items} />
-                <ToDoListForm addItem={this.addItem} />
+                <ToDoListItemView items={this.state.items} />
+                <ToDoListFormView addItem={this.addItem} />
             </div>
         );
 
@@ -82,4 +79,4 @@ class ToDoList extends React.Component {
 }
 
 
-export default ToDoList;
+export default ToDoListPresenter;
