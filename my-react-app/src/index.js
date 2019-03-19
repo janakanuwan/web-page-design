@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import ToDoListPresenter from "./ToDoList";
+import ToDoListPresenter from "./ToDoListMVP";
 
+ReactDOM.render(<ToDoListPresenter />, document.getElementById('root'));
 ReactDOM.render(<ToDoListPresenter />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
