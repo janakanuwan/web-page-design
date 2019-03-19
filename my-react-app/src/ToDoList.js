@@ -18,7 +18,6 @@ class ToDoListItemView extends React.Component {
 
 
 class ToDoListFormView extends React.Component {
-
     constructor(props) {
         super(props);
         // https://reactjs.org/docs/uncontrolled-components.html
@@ -46,17 +45,14 @@ class ToDoListFormView extends React.Component {
             </form>
         );
     }
-
 }
 
 class ToDoListPresenter extends React.Component {
-
     constructor(props) {
         super(props);
         this.state = {
             items: []
         };
-
         this.addItem = this.addItem.bind(this);
     }
 
@@ -65,18 +61,14 @@ class ToDoListPresenter extends React.Component {
         this.setState({items: updatedItems});
     }
 
-
     render() {
-
         return (
             <div>
                 <ToDoListItemView items={this.state.items} />
                 <ToDoListFormView addItem={this.addItem} />
             </div>
         );
-
     }
 }
-
 
 export default ToDoListPresenter;
