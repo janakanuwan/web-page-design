@@ -5,7 +5,7 @@ import React from 'react';
 class ToDoListItemView extends React.Component {
     render() {
         const {items} = this.props;
-        const itemList = items.map((item, index) => <li key={index}> {item} </li>)
+        const itemList = items.map((item, index) => <li key={index}> {item} </li>);
 
         return (
             <div>
@@ -15,7 +15,6 @@ class ToDoListItemView extends React.Component {
         );
     }
 }
-
 
 class ToDoListFormView extends React.Component {
     constructor(props) {
@@ -32,7 +31,7 @@ class ToDoListFormView extends React.Component {
         const newItemValue = this.formInput.current.value;
         if (newItemValue) {
             this.props.addItem(newItemValue);
-            this.formInput.current.value ='';
+            this.formInput.current.value = '';
         }
     }
 
@@ -47,14 +46,18 @@ class ToDoListFormView extends React.Component {
     }
 }
 
+import LinkedStateMixin from 'react-addons-linked-state-mixin';
+
 class ToDoListModelView extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            items: []
-        };
+        this.mixins = [LinkedStateMixin];
         this.addItem = this.addItem.bind(this);
     }
+
+    getInitialState() {
+        return {message: 'Hello!'};
+    };
 
     addItem(newItem) {
         const updatedItems = this.state.items.concat(newItem);
@@ -65,7 +68,7 @@ class ToDoListModelView extends React.Component {
         return (
             <div>
                 <ToDoListItemView items={this.state.items} />
-                <ToDoListFormView addItem={this.addItem} />
+                <ToDoListFormView link={this.linkState()} />
             </div>
         );
     }
