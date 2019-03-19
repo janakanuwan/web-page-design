@@ -1,6 +1,6 @@
-import React from 'react';
-
 // Ref: https://codepen.io/marekdano/pen/bVNYpq
+
+import React from 'react';
 
 class ToDoListItemView extends React.Component {
     render() {
